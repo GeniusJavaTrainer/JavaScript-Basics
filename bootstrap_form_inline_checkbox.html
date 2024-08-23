@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <form action="/xyz">
+        <h3>What are your hobbies</h3>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" name="hobbies" type="checkbox" id="inlineCheckbox1" value="chess">
+            <label class="form-check-label" for="inlineCheckbox1">Chess</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="hobbies" type="checkbox" id="inlineCheckbox2" value="cricket">
+            <label class="form-check-label" for="inlineCheckbox2">Cricket</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" name="hobbies" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+            <label class="form-check-label" for="inlineCheckbox3">Watching movies</label>
+          </div>
+
+        <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>
