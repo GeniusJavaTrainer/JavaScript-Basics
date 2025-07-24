@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The push() Method</h2>
+
+    <p>The push method appends a new element to an array.</p>
+
+    <form>
+        <input type="text" id="fruit">
+        <button type="button" onclick="myFunction()">Push</button>
+    </form>
+    
+    <p id="demo"></p>
+
+    <script>
+        const rivers = [];
+        
+
+        function myFunction() {
+            rivers.push(document.getElementById('fruit').value);
+            let content = "<table border='2'>";
+
+            for(i = 0 ; i < rivers.length ; i++){
+                content += '<tr><td>' + rivers[i]+'</td></tr>';
+            }
+            content += '</table>';
+
+            document.getElementById("demo").innerHTML = content;
+        }
+    </script>
+
+</body>
+
+</html>

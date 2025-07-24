@@ -10,14 +10,15 @@
 </head>
 
 <body>
-  
-    <p id="demo1"></p>
-   
+    <h1>JavaScript Strings</h1>
+    
     <script>
-       const fruits = ["Apple", "Orange", "Apple", "Mango"];
-       let position = fruits.indexOf("Apple", 1);
+        const text = `Where's the "Vehicle"?`;
+        let length = text.length
+        document.write('Length is ' + length)
 
-       document.getElementById("demo1").innerHTML = "Element found at position: " + position
+        let str = "We are the \"Aryans\" from Bharat"
+        document.write("<br/>"+str)
     </script>
 </body>
 
