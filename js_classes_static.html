@@ -14,25 +14,33 @@
     <p>A static method is created with the "static" keyword, and you can only call the method on the class itself.</p>
 
     <p id="demo"></p>
-
+    <p id="count"></p>
     <script>
         class Car {
+            static count = 0;
             constructor(name) {
                 this.name = name;
+                Car.count++;
             }
-            static hello() {
-                return "Hello!!";
+            static retCount() {
+                return Car.count;
             }
+
+            // static returnCount(){
+            //     return Car.count;
+            // }
         }
 
         const myCar = new Car("Ford");
+        const myCar2 = new Car("BMW");
 
         //You can call 'hello()' on the Car Class:
-        document.getElementById("demo").innerHTML = Car.hello();
+        document.getElementById("demo").innerHTML = Car.retCount();
 
         // But NOT on  a Car Object:
-        // document.getElementById("demo").innerHTML = myCar.hello();
+        // document.getElementById("demo").innerHTML = myCar.retCount();
         // this will raise an error.
+        document.getElementById("count").innerHTML = "Total no. of cars created: " + Car.count;
     </script>
 </body>
 

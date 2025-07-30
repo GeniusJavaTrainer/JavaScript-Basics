@@ -10,8 +10,33 @@
     <script>
        const mouseOverEffect = () => document.getElementById('longtext').style.backgroundColor = 'yellow'
 
+       function mouseOverEffect1(){
+        document.getElementById('longtext').style.backgroundColor = 'yellow'
+       }
+       
        function mouseOutEffect(){
         document.getElementById('longtext').style.backgroundColor = 'green'
+       }
+
+       function showCount(){
+        let long_text = document.getElementById('longtext').value;
+        let short_text = document.getElementById('shorttext').value;
+
+        let count = 0;
+        let isFound = true;
+        let foundAt = 0;
+
+        while(isFound){
+            foundAt = long_text.indexOf(short_text, foundAt);
+            foundAt++;
+            
+            if(foundAt == 0){
+                break;
+            }
+            count++;
+        }
+
+        document.getElementById('message').innerHTML = "Element found " + count + " times."
        }
     </script>
 </head>
@@ -24,5 +49,7 @@
         <input type="text" id="shorttext" placeholder="Enter short text"/><br/>
         <input type="button" value="Show Count" onclick="showCount()">
     </form>
+
+    <p id="message"></p>
 </body>
 </html>

@@ -10,9 +10,9 @@
 
     <script>
         // Create element:
-        function createIt() {
+        const createIt = () => {
             const para = document.createElement("p");
-            para.innerText = "This is a paragraph.";
+            para.innerHTML = "<h1>This is a paragraph.</h1>";
             para.classList.add("bg-primary")
             // Append to body:
             document.body.appendChild(para);
@@ -22,10 +22,13 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h1>The Document Object</h1>
     <h2>The createElement() Method</h2>
 
     <button type="button" onclick="createIt()">Create a p element with some text</button>
+    <h1>This is at end</h1>
+    </div>
 </body>
 
 </html>

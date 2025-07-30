@@ -10,10 +10,10 @@
 
     <script>
         function knowClasses(){
-            let isClassSet = document.getElementById('myButton').hasAttribute('class')
-            let shouldSetClass = true
+            let isClassSet = document.getElementById('myButton').hasAttribute('class');
+            let shouldSetClass = true;
             if(isClassSet == false){
-                shouldSetClass = confirm('No class set. Should I set it to danger?')
+                shouldSetClass = window.confirm('No class set. Should I set it to danger?')
                 if(shouldSetClass == true){
                     document.getElementById('myButton').setAttribute('class','btn btn-danger')        
                 }else{

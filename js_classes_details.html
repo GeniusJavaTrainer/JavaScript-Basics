@@ -17,10 +17,14 @@
 
     <script>
         class Car {
+            name="";
+            year=0;
+            
             constructor(name, year) {
                 this.name = name;
                 this.year = year;
             }
+
             age(x) {
                 return x - this.year;
             }

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h2>JavaScript Regular Expressions</h2>
 
     <p>A global search for any of the specified alternatives (0|5|7):</p>
@@ -17,12 +18,13 @@
     <p id="demo"></p>
 
     <script>
-        let text = "01234567890123456789";
+        let text = "0123456789 0123456789";
         let pattern = /(0|5|7)/g;
         let result = text.match(pattern);
 
         document.getElementById("demo").innerHTML = result;
     </script>
+    </div>
 </body>
 
 </html>

@@ -17,7 +17,7 @@
                 if(this.readyState == 4 && this.status == 200) {
                     document.getElementById('message').innerHTML = this.responseText
                 }else{
-                    document.getElementById('message').innerHTML = "<h3>Resource NOT found</h3>"
+                    document.getElementById('message').innerHTML = "<h3>Resource NOT found</h3>" + this.status
                 }
             }
 

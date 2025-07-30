@@ -12,14 +12,15 @@
 <body>
     <p id="demo"></p>
     <p id="demo1"></p>
-
+    <p id="demo2"></p>
     <script>
-        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        const fruits = ["Banana", "Orange", "Apple", "Mango", "Lemon"];
         document.getElementById("demo").innerHTML = fruits
 
-        fruits.splice(1, 2);
+        const another = fruits.splice(1, 4);
         document.getElementById("demo1").innerHTML = fruits
         
+        document.getElementById("demo2").innerHTML = another
     </script>
 </body>
 

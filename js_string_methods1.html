@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h1>JavaScript Strings</h1>
     <p id="result"></p>
     <p id="result1"></p>
@@ -25,7 +26,7 @@
         let indexFromStart = str.charAt(0);
         document.getElementById('result1').innerHTML = indexFromStart;
 
-        indexFromStart = str.at(0);
+        indexFromStart = str.at(-1);
         document.getElementById('result2').innerHTML = indexFromStart;
 
         let charCodeFromStart = str.charCodeAt(0);
@@ -35,7 +36,7 @@
         document.getElementById('result4').innerHTML = indexFromEnd;
 
     </script>
-
+</div>
 
 </body>
 

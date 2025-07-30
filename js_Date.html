@@ -15,15 +15,17 @@
            let myDate = new Date(document.getElementById('mydate').value)
 
            let dayOfMonth = myDate.getDate();
-           document.getElementById('date').innerHTML = today
+           document.getElementById('date').innerHTML = today;
             
-           document.getElementById('dayofmonth').innerHTML = dayOfMonth
-           document.getElementById('year').innerHTML = myDate.getFullYear()
+           document.getElementById('dayofmonth').innerHTML = dayOfMonth;
+           document.getElementById('year').innerHTML = myDate.getFullYear();
+           document.getElementById('monthofdate').innerHTML = myDate.getMonth()+1;
         }
     </script>
 </head>
 
 <body>
+    <div class="container-fluid">
     <form>
         <input type="date" name="" id="mydate">
         <button type="button" onclick="showDate()" id="myButton">Show Date Demo!</button>
@@ -33,6 +35,7 @@
     <p id="dayofmonth"></p>
     <p id="monthofdate"></p>
     <p id="year"></p>
+</div>
 </body>
 
 </html>

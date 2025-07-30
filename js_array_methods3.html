@@ -13,14 +13,16 @@
     <p id="demo"></p>
     <p id="demo1"></p>
     <p id="demo2"></p>
+    <p id="demo3"></p>
 
     <script>
         const fruits = ["Banana", "Orange", "Apple", "Mango"];
         document.getElementById("demo").innerHTML = fruits;
 
-        fruits.shift();
+        const fruit = fruits.shift();
         document.getElementById("demo1").innerHTML = fruits;
-
+        document.getElementById("demo3").innerHTML = fruit;
+        
         fruits.unshift("Papaya")
         document.getElementById("demo2").innerHTML = fruits;
 

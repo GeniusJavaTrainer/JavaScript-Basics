@@ -13,12 +13,13 @@
            let action = returnInsert()
 
            if(action.type === "INSERT"){
-            alert(action.task)
+            alert(action.message)
            }
         }
 
         function returnInsert(){
-            return {type:"INSERT", task:"insert a record"}
+            let action = {type:"INSERT", message:"insert a record"};
+            return action;
         }
     </script>
 </head>

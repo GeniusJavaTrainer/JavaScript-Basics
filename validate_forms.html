@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: grey;
+    overflow-y: auto;
+  }
+  
+  .header {
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+  }
+  
+  .long-content {
+    height: 600px;
+    padding-left: 15px;
+    z-index: 1;
+  }
+  
+  .the-problem {
+      display: inline-block;
+      transform: rotate(90deg);
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="long-content">
+          <br />
+          <br />
+          <br />
+          <span class="the-problem">x</span>
+        </div>
+      </div>
+</body>
+</html>

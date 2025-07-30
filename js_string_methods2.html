@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h1>JavaScript Strings</h1>
     <p id="result0"></p>
     <p id="result"></p>
@@ -32,7 +33,7 @@
         part = text.slice(7);
         document.getElementById("result1").innerHTML = "<strong>text.slice(7):</strong> " + part;
 
-        part = text.slice(-12, -6);
+        part = text.slice(12, -6);
         document.getElementById("result2").innerHTML = "<strong>text.slice(-12, -6):</strong> " + part;
 
         /* This is different from slice in the sense that -ve index gets converted to 0*/
@@ -57,6 +58,7 @@
         part = text.substr(-4, -3);
         document.getElementById("result8").innerHTML = "<strong>text.substr(-4, -3):</strong> " + part;
     </script>
+    </div>
 </body>
 
 </html>

@@ -12,14 +12,18 @@
         function showMath(){
            let num = parseFloat(document.getElementById('num').value)
 
-           document.getElementById('round').innerHTML = Math.round(num)
+           document.getElementById('round').innerHTML = num.toFixed(2)
            document.getElementById('ceil').innerHTML = Math.ceil(num)
            document.getElementById('floor').innerHTML = Math.floor(num)
+
+           document.getElementById('min').innerHTML = Math.min(10,20);
+           document.getElementById('max').innerHTML = Math.max(10,20);
         }
     </script>
 </head>
 
 <body>
+    <div class="container-fluid">
     <form>
         <input type="number" id="num"><br>
         <button type="button" onclick="showMath()" id="myButton">Show Maths Demo!</button>
@@ -28,6 +32,10 @@
     <p id="round"></p>
     <p id="ceil"></p>
     <p id="floor"></p>
+
+    <p id="min"></p>
+    <p id="max"></p>
+</div>
 </body>
 
 </html>

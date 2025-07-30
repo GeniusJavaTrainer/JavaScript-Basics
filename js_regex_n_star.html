@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h2>JavaScript Regular Expressions</h2>
 
     <p>Do a global search for an "l", followed by zero or more "o" characters:</p>
@@ -18,9 +19,10 @@
 
     <script>
         let text = "Hellooo World! Hello W3Schools!";
-        let result = text.match(/lo*/g);
+        let result = text.match(/lo*/g);// * means 0 or more times.
         document.getElementById("demo").innerHTML = result;
     </script>
+    </div>
 </body>
 
 </html>

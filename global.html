@@ -13,9 +13,20 @@
        let number = 10;
 
        function doStuff(){
-            let number = 20;
-            document.write('Value of number: ' + number + '<br/>');
-            number = number + 20;
+            var a = 10;
+            document.write('Value of a: ' + a+'<br>');
+            
+            {
+                var a = 20;
+                document.write('Value of a: ' + a+'<br>');
+                {
+                    let a = 30;
+                    document.write('Value of a: ' + a+'<br>');
+                }
+                document.write('Value of a: ' + a+ '<br>');
+            }
+            document.write('Value of a: ' + a);
+            
        }
 
        function doIt(){
@@ -27,7 +38,7 @@
     
     <script>
         doStuff();
-        doIt();
+        // doIt();
     </script>
     
 </body>

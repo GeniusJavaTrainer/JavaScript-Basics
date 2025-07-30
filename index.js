@@ -1,0 +1,1 @@
+document.getElementById('root').innerHTML = "<h1>Welcome to ReactJS</h1>"

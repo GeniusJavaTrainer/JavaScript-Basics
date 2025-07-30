@@ -20,21 +20,37 @@
         document.getElementById('demo').innerHTML = message
       }
 
-      let myPromise = new Promise(function(myResolve, myReject){
-        let number = 10;
+      function displayError(message){
+        document.write("<img src='images/404.jfif' width='300' height='300'/><br/>");
+        document.write(message);
+      }
 
-        if(number == 10){
+      let myPromise = new Promise(function(myResolve, myReject){
+        let number = 11;
+
+        if(number == 11){
           myResolve("Everything is fine")
         }else{
           myReject("Some error has happened")
         }
       })
 
+      function everythingFine(fineMessage){
+        displaySomething(fineMessage)
+      }
+
+      function showError(error){
+        displayError(error)
+      }
+
       myPromise.then(
-        function(message){displaySomething(message)},
-        function(error){displaySomething(error)}
+        everythingFine,
+        showError
       )
     </script>
 </body>
 
 </html>
+<!-- 
+myResolve = () {displaySomething(message)}
+-->

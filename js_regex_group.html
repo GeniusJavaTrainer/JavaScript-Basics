@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h1>JavaScript Regular Expression</h1>
     <h2>Using [ ] to find a range of characters</h2>
 
@@ -19,11 +20,12 @@
 
     <script>
         let text = "Is this all there is?";
-        let pattern = /[h]/g;
+        let pattern = /[hi]/ig;
         let result = text.match(pattern);
 
         document.getElementById("demo").innerHTML = result;
     </script>
+    </div>
 </body>
 
 </html>

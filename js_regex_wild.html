@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h1>JavaScript Regular Expression</h1>
     <h2>The . Metacharacter</h2>
 
@@ -18,12 +19,13 @@
     <p id="demo"></p>
 
     <script>
-        let text = "That's hot!";
+        let text = "That's hot! In fact, hottest!";
         let pattern = /h.t/g;
         let result = text.match(pattern);
 
         document.getElementById("demo").innerHTML = result;
     </script>
+    </div>
 </body>
 
 </html>

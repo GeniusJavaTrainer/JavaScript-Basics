@@ -13,10 +13,11 @@
         function createIt() {
             const para = document.createElement("p");
             para.innerText = "This is a paragraph.";
-            para.classList.add("bg-primary")
+            para.classList.add("bg-primary");
 
-            const parent = document.getElementById('btn').parentNode
-            const current = document.getElementById('btn')
+            const parent = document.getElementById('btn').parentNode;
+            alert(parent.innerText);
+            const current = document.getElementById('btn');
 
             // Insert Before:
             parent.insertBefore(para,current);
@@ -26,10 +27,12 @@
 </head>
 
 <body>
+    <div class="container-fluid">
     <h1>The Document Object</h1>
     <h2>The createElement() Method</h2>
 
     <button type="button" onclick="createIt()" id="btn">Create a p element with some text</button>
+    </div>
 </body>
 
 </html>

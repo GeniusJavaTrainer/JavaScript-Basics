@@ -9,20 +9,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+        let num = 1;
         function insertIt(){
-            const para = document.createElement('p')
-            para.innerHTML = 'Sample text'
+            const para = document.createElement('p');//Creating a paragraph element
+            para.innerHTML = 'Sample text' + num;
             para.classList.add('bg-success')
-
+            para.classList.add('mb-0','p-2');
             
             const current = document.getElementById('btn')
             document.body.insertBefore(para, current.nextSibling)
+            num++;
         }
     </script>
 </head>
 
 <body>
    <button type="button" id="btn" onclick="insertIt()">Insert After Me!</button>
+   <p>Hello there!</p>
 </body>
 
 </html>
